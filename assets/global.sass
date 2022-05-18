@@ -1,0 +1,29 @@
+$message-radius-size: 1rem
+@font-face
+    font-family: vazir
+    src: url("./fonts/vazir.woff")
+@font-face
+    font-family: vazir-bold
+    src: url("./fonts/Vazir-Bold.woff")
+
+*
+    font-family: vazir !important
+    h1,h2,h3,h4,h5,h6
+        font-family: vazir-bold !important
+main
+    &:not(#chat)
+        direction: rtl !important
+.message
+    background: #b4b4b4
+    padding: 0.3rem 0.6rem
+    border-radius: $message-radius-size
+    border-bottom-left-radius: 0.2rem !important
+    min-height: 1rem !important
+    max-width: 15rem
+    min-width: 0.1rem !important
+    overflow-wrap: break-word !important
+    text-align: right
+.message-user
+    background: #57bee6 !important
+    border-bottom-left-radius: $message-radius-size !important
+    border-bottom-right-radius: 0.2rem !important
